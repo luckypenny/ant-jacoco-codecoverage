@@ -58,7 +58,6 @@
 	          <junit fork="yes" dir="${basedir}" failureProperty="test.failed">
 	            <classpath location="${classes.dir}" />
 	            <classpath refid="classpath" />
-
 	            <formatter type="xml" />
 	            <batchtest todir="${reports.junit.xml.dir}">
 	              <fileset dir="${test.dir}">
@@ -67,9 +66,9 @@
 	            </batchtest>
 	          </junit>
 	        </jacoco:coverage>
-	    </target>
-
+	    </target>		
 	    <!-- ========= The main target "all" ========= -->
-	    <target name="all" depends="clean,compile,test" />
+	   	<target name="all" depends="clean,compile,test" />
+		
 
 </project>
